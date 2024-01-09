@@ -22,5 +22,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: release #The branch the action should deploy to.
-          folder: js2 # The folder the action should deploy.
+          folder: ../ # The folder the action should deploy.
         
