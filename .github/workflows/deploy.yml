@@ -23,5 +23,5 @@ jobs:
         with:
           branch: main #The branch the action should deploy to.
           repository-name: aspcodenet/samplegithubsite
-          folder: build # The folder the action should deploy.
+          folder: . # The folder the action should deploy.
       
