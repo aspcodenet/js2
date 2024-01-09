@@ -22,6 +22,6 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: main #The branch the action should deploy to.
-          repository: aspcodenet/samplegithubsite
+          repository-name: aspcodenet/samplegithubsite
           folder: build # The folder the action should deploy.
       
