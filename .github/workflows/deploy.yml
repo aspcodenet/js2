@@ -25,4 +25,4 @@ jobs:
         with:
           branch: release #The branch the action should deploy to.
           folder: . # The folder the action should deploy.
-          repository-name: aspcodenet/MyQuizSite.git
+          repository-name: aspcodenet/MyQuizSite
