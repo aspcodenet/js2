@@ -18,6 +18,8 @@ const allPlayersTBody = document.querySelector("#allPlayers tbody")
 const save =  document.getElementById("save")
 const addNew = document.getElementById("addNew")
 
+
+//weird
 save.addEventListener("click",async (ev)=>{
     ev.preventDefault()
     let player = {
