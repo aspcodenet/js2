@@ -1,27 +1,28 @@
 name: Build and Deploy
 permissions:
-  contents: write
+  contents: write
 on:
-  push:
-    branches:
-      - main
+  push:
+    branches:
+      - main
 jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    concurrency: ci-${{ github.ref }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: '16.13.2'
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    concurrency: ci-${{ github.ref }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '16.13.2'
 
-      - name: Install and Build 🔧
-        run: | 
-          npm ci
-          npm run build        
-      - name: Deploy 
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: release #The branch the action should deploy to.
-          folder: . # The folder the action should deploy.
+      - name: Install and Build 🔧
+        run: | 
+          npm ci
+          npm run build        
+      - name: Deploy 
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: release #The branch the action should deploy to.
+          folder: . # The folder the action should deploy.
+          repository: aspcodenet/MyQuizSite.git
