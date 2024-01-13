@@ -14,6 +14,7 @@ export function sum(a, b) {
 const allPlayersTBody = document.querySelector("#allPlayers tbody")
 //const allPlayersTBody = document.querySelector("#allPlayerstbody")
 //const searchPlayer = document.getElementById("searchPlayer")
+// hello
 const save =  document.getElementById("save")
 const addNew = document.getElementById("addNew")
 
