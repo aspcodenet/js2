@@ -25,4 +25,4 @@ jobs:
         with:
           branch: main #The branch the action should deploy to.
           repository-name: aspcodenet/MyQuizSite
-          folder: ./js2
+          folder: ./
