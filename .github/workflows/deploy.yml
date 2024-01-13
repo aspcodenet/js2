@@ -25,4 +25,5 @@ jobs:
         with:
           branch: main #The branch the action should deploy to.
           repository-name: aspcodenet/MyQuizSite
-          folder: ./
+          token: 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
+          folder: .
